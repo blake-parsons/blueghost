@@ -29,15 +29,16 @@
             position: relative; /* Set container as relative */
         }
         .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            display: inline-block; /* Use inline-block to prevent image from expanding full width */
+            position: relative; /* Position relative for absolute positioning inside */
+        }
+        .center img {
             max-width: 100%;
             height: auto;
         }
         .phone-number {
             font-size: 20px;
-            margin-top: 20px;
+            margin-top: 10px; /* Reduce margin top */
             color: #003366;
             position: absolute; /* Position phone number absolutely */
             bottom: 0; /* Align to the bottom */
@@ -53,7 +54,7 @@
                 font-size: 32px;
             }
             .phone-number {
-                font-size: 16px;
+                font-size: 16px; /* Adjust font size for smaller screens */
             }
         }
     </style>
