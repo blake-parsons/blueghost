@@ -26,6 +26,7 @@
         }
         .content {
             padding: 0px;
+            position: relative; /* Set container as relative */
         }
         .center {
             display: block;
@@ -38,15 +39,21 @@
             font-size: 20px;
             margin-top: 20px;
             color: #003366;
+            position: absolute; /* Position phone number absolutely */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left within the container */
+            right: 0; /* Align to the right within the container */
+            padding: 10px; /* Add some padding for readability */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
         }
 
         /* Media Query for smaller screens */
         @media screen and (max-width: 600px) {
             .header .subheading {
-                font-size: 32px; /* Decrease font size for smaller screens */
+                font-size: 32px;
             }
             .phone-number {
-                font-size: 16px; /* Decrease font size for smaller screens */
+                font-size: 16px;
             }
         }
     </style>
@@ -59,9 +66,9 @@
     <div class="content">
         <div class="center">
             <img src="Logo.png" alt="BG Logo">
-        </div>
-        <div class="phone-number">
-            Call or text <strong>(620) 629-0029</strong>
+            <div class="phone-number">
+                Call or text <strong>(620) 629-0029</strong>
+            </div>
         </div>
     </div>
 </body>
