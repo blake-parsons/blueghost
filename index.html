@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Blue Ghost BBQ</title>
     <style>
         body {
@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #FFF; /* Background color set to white */
+            background-color: #FFF;
         }
         .header {
             background-color: #FFF;
@@ -18,7 +18,7 @@
             padding: 20px;
         }
         .header h1 {
-            margin: 20px; /* Added margin value */
+            margin: 20px;
             font-size: 16px;
         }
         .header .subheading {
@@ -29,25 +29,32 @@
         }
         .center {
             display: block;
-            justify-content: center;
-            align-items: center;
-            height: 700px;
-        }
-        .center img {
+            margin-left: auto;
+            margin-right: auto;
             max-width: 100%;
-            max-height: 100%;
+            height: auto;
         }
         .phone-number {
             font-size: 20px;
             margin-top: 20px;
             color: #003366;
         }
+
+        /* Media Query for smaller screens */
+        @media screen and (max-width: 600px) {
+            .header .subheading {
+                font-size: 32px; /* Decrease font size for smaller screens */
+            }
+            .phone-number {
+                font-size: 16px; /* Decrease font size for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to</h1> <!-- Added closing </h1> tag -->
-        <div class="subheading"><strong>Blue Ghost</strong></div> <!-- Corrected strong tag placement -->
+        <h1>Welcome to</h1>
+        <div class="subheading"><strong>Blue Ghost</strong></div>
     </div>
     <div class="content">
         <div class="center">
